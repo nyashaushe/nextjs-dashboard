@@ -1,4 +1,6 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+
+// export const experimental_ppr = true; this is a temporary workaround for the issue with the layout not being server-rendered
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
