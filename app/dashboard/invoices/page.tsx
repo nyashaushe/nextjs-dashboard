@@ -6,7 +6,22 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
- 
+import { Metadata } from 'next';
+
+//Meta data for the page
+// This metadata is used to set the title of the page
+// and is used by the browser to display the title in the tab
+// It is also used by search engines to display the title in search results
+// The metadata is a static object that is exported from the page
+// The metadata is used to set the title of the page
+// The metadata is a static object that is exported from the page
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
+
+// This page function is used to render the invoices page
+// It is a server component that fetches data from the server 
 export default async function Page(props: {
   searchParams?: Promise<{
     query?: string;
